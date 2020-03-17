@@ -71,7 +71,8 @@ double calculate(std::istream& stream)
             values.push(atof(str.c_str()));
         } else if (is_sign(str)) {
             if (values.size() < 2) {
-                throw Error("Bad usage: Binary operation for less then 2 arguments\n");
+                throw Error("Bad usage: Binary operation
+                            for less then 2 arguments\n");
             }
             double first_value, second_value;
             second_value = values.top();
